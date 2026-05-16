@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+/* Tell Tailwind v4 exactly where to scan for class names */
+@source "../src/**/*.{jsx,js,ts,tsx}";
+
+@theme {
+  --color-forest-900: #0d2414;
+  --color-forest-800: #14351f;
+  --color-forest-700: #1c4a2c;
+  --color-forest-600: #266038;
+  --color-forest-500: #317a47;
+  --color-forest-400: #4a9960;
+  --color-forest-300: #6db882;
+  --color-forest-200: #a3d4b0;
+  --color-forest-100: #d4eedd;
+  --color-forest-50:  #eef8f1;
+
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "Inter", system-ui, sans-serif;
+    color: #1c4a2c;
+    background-color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
